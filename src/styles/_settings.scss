@@ -1,0 +1,33 @@
+// @font-face {
+//   font-family: "font-1";
+// }
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #dbbde8;
+$color-2: white;
+$color-3:#bdf0ee;
+$white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../../src/background-img.png);
+  background-size: 100%;
+  font-family: sans-serif;
+  @include verticalCenter;
+}
+li {
+  list-style-type: none;
+  width: 105%;
+}
