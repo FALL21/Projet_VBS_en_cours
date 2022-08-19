@@ -8,6 +8,7 @@ export default function Navbar() {
                 <div>
                     <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>Acceuil</NavLink>
                     <NavLink to="/services" className={(nav) => (nav.isActive ? "nav-active" : "")}>Services</NavLink>
+                    <NavLink to="/Formulaire_dm" className={(nav) => (nav.isActive ? "nav-active" : "")}>Demander un Service</NavLink>
                 </div>
             </nav>
         </>

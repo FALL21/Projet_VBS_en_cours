@@ -9,6 +9,7 @@ import Navbar from './components/Navebar/Navbar';
 import Lavage from './pages/Services/Lavage/lavage';
 import Menage from './pages/Services/menage/menage';
 import Post from "./pages/Post";
+import Demande from "./pages/Formulaire_dm";
 
 
 const App = () => {
@@ -31,7 +32,6 @@ const App = () => {
 
   }, [uid]);
 
-
   return (
     <UidContext.Provider value={uid}>
       <Navbar />
@@ -43,6 +43,7 @@ const App = () => {
         </Route> 
         <Route path='/Agence' element={< Agence />} />
         <Route path='/Post' element={< Post />} />
+        <Route path='/Formulaire_dm' element={< Demande />} />
       </Routes>
     </UidContext.Provider>
   );
